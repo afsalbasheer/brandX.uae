@@ -1,0 +1,70 @@
+.head-image{
+    
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
+    url(image/About-us.jpg) no-repeat center center/cover;
+    animation: clippy-animation 1s ease-in forwards;
+}
+@keyframes clippy-animation{
+    0%{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        opacity: 0;
+    }
+    100%{
+        clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+        opacity: 1;
+    }
+}
+.about-head-h1{
+    position: relative;
+    top: 50vh;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 60px;
+    animation: from-left 1.5s ease-in forwards ;
+}
+
+.wrapper{
+    margin: 20px auto;
+    width: 80%;
+   
+}
+img{
+    max-width: 400px;
+    float: left;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.double-wrapper{
+    margin: 40px auto;
+    width: 80%;
+}
+.boxy{
+    margin-bottom: 60px;
+    width: 45%;
+}
+.wrapper-double{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 868px){
+
+    .wrapper{
+        margin: 40px auto;
+        width: 100%;
+    }
+    img{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .wrapper-double{
+        flex-direction: column;
+    }
+    .boxy{
+        margin-bottom: 60px;
+        width: 100%;
+    }
+}
